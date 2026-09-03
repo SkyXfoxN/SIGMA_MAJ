@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ms">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Penjana Laporan — MyAduan Johor</title>
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<div class="bar">
+  <h1>Penjana Laporan Pemantauan Aduan</h1>
+  <span class="pill" id="period">-</span>
+  <span class="pill" id="count">-</span>
+  <span class="sp"></span>
+  <button class="btn btn-s" id="btnTemplate">Templat Excel</button>
+  <button class="btn btn-s" id="btnUpload">Muat naik Excel</button>
+  <button class="btn btn-p" id="btnPptx">Muat turun PPTX</button>
+  <button class="btn btn-p" id="btnPdf">Muat turun PDF</button>
+  <input type="file" id="file" accept=".xlsx,.xls">
+</div>
+
+<div class="notes" id="notes"></div>
+<div class="hint">Semua pemprosesan berlaku dalam pelayar anda. Fail Excel tidak dimuat naik ke mana-mana pelayan.</div>
+
+<div id="deck"></div>
+
+<script src="assets/vendor/xlsx.full.min.js"></script>
+<script src="assets/vendor/chart.umd.js"></script>
+<script src="assets/vendor/chartjs-plugin-datalabels.min.js"></script>
+<script src="assets/vendor/pptxgen.bundle.js"></script>
+<script>Chart.register(ChartDataLabels);</script>
+
+<script src="assets/theme.js"></script>
+<script src="assets/data-default.js"></script>
+<script src="assets/excel.js"></script>
+<script src="assets/insights.js"></script>
+<script src="assets/spec.js"></script>
+<script src="assets/render-html.js"></script>
+<script src="assets/render-pptx.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>
